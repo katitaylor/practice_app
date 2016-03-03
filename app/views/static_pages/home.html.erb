@@ -1,13 +1,27 @@
-<script src="javascript/book.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <div class="center jumbotron">
   <h1>Home</h1>
-  <p>Welcome to your favorite bookfinding app.</p>
+  <p>Begin your journey into books ...
+
+  <br>Enter a year - month - day of the bestseller list you'd like to review.
+
+
+<form id="Books" action="#home" method="get" accept-charset="utf-8">
+  <input type="yyyy-MM-dd" name="yyyy-MM-dd" value="yyyy-MM-dd">
+  <input type="submit" value='Get List'>
+</form>
 
 
 
- </div>
+<div id="Book">
+  <ul>
+  <% @books.each do |book| %>
+    <li><%= book %></li>
+    <% end %>
+  </ul>
+</div>
 
+</div>
+   <!-- method // action of form synchronous return to render html.erb -->
 
 
 

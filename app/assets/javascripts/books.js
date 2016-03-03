@@ -1,9 +1,9 @@
 // Wait until the DOM is ready
 
-http://api.nytimes.com/svc/books/{version}/lists/best-sellers/history[.response_format]?{search-param1=value1}&[...]&[optional-param1=value1]&[...]&api-key={your-API-key}
+// http://api.nytimes.com/svc/books/{version}/lists/best-sellers/history[.response_format]?{search-param1=value1}&[...]&[optional-param1=value1]&[...]&api-key={your-API-key}
 
 $(function() {
-    var nytBook = 'http://api.nytimes.com/svc/books/v2/best-sellers/history/';
+    var nytBook = 'http://api.nytimes.com/svc/books/v3/lists';
 
     // List the books
     var display = function() {
