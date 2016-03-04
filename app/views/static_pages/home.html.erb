@@ -5,20 +5,12 @@
   <br>Enter a year - month - day of the bestseller list you'd like to review.
 
 
-<form id="Books" action="#home" method="get" accept-charset="utf-8">
+<form id="Books" action="/books/new" method="get" accept-charset="utf-8">
   <input type="yyyy-MM-dd" name="yyyy-MM-dd" value="yyyy-MM-dd">
   <input type="submit" value='Get List'>
 </form>
 
 
-
-<div id="Book">
-  <ul>
-  <% @books.each do |book| %>
-    <li><%= book %></li>
-    <% end %>
-  </ul>
-</div>
 
 </div>
    <!-- method // action of form synchronous return to render html.erb -->

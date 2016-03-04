@@ -1,10 +1,8 @@
-<% provide(:title, 'Books') %>
-<h1>Books are coming soon!</h1>
 
-
-
-<p><ul><%= render @books %></p>
-    <li><% :listname %></li>
-    <li><% :contributor %></li>
-    <li><% :title %></li>
+<div id="Book">
+  <ul>
+  <% @books.each do |book| %>
+    <li><%= book %></li>
+    <% end %>
   </ul>
+</div>
